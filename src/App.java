@@ -1,41 +1,48 @@
-public class App {
-    public static void main(String[] args) throws Exception {
 
-        // for (int i = 0; i < 1000; i++) 
-        // {
-        // System.out.println("Hello, World!");
-        // System.out.println("****************************************");
-        // System.out.println("*              nhaheosocute            *");
-        // System.out.println("****************************************");
-        //  System.out.printf("%n%d nhanheosocute",i);          
+
+public class App{
+    public static void main(String[] args) {
+        Check check1 = new Check();
+        check1.checkPass(10);
+
+        int a = 6;
+        int b = 7;
+        sosanh test = new sosanh();
+        test.sosanh1(a, b);
+
+        // Scanner scr = new Scanner(System.in);
+        // System.out.println("moi nhap thu: ");
+        // String dayInWeek = scr.next();
+        // switch (dayInWeek){
+        //     case "Hai":
+        //     case "Ba":
+        //     case "Bốn":
+        //     case "Năm":
+        //     case "Sáu":
+        //     System.out.println("Đây là ngày trong tuần");
+        //     break;
+        //     case "Bảy":
+        //     case "Chủ Nhật":
+        //     System.out.println("Đây là ngày cuối tuần");
+        //     break;
+        //     default:
+        //     System.out.println("Nhập sai chính tả");
+        //     break;
         // }
-        // ctrl +k+c
-        // ctrl +k+u
+       
+        n1 n1_n = new n1();
+        n1_n.n1_1(4);
 
-        // byte a = 2;
-        // byte b = 3;
-        // byte c = 6;
-        // int d;
-        // d = a+b+c;
-        // System.err.print("\n");
-        // System.out.printf("%d * %d = %d",a,b,c);
-        // hinhchunhat hcn1 = new hinhchunhat();
-        // hcn1.chieudai = 5;
-        // hcn1.chieurong = 6;
-        // int dientichhcn1 = hcn1.chieudai * hcn1.chieurong;
-        // System.out.printf("dien tich hinh chu nhat la %d", dientichhcn1);
-        Person person1 = new Person();
-        person1.namsinh = 2004;
-        int tuoi = person1.PredictAge();
-        System.out.printf("So tuoi la %d", tuoi);
-
+        //convert day hour bai 4
+        ConvertDayHourToMin convert = new ConvertDayHourToMin();
+        a = convert.convertDayToMin(5);
+        b = convert.convertHourToMin(6);
+        System.out.printf(" 5 gio doi thanh %d phut%n",a);
+        System.out.printf("6 gio doi thanh %d phut",b);
         
-   
-
-
-
+         
+        
 
 
     }
 }
- 

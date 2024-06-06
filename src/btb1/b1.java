@@ -33,11 +33,7 @@ public class b1 {
         String hana = car.upToNhanAbility();
         System.out.printf("kha nang chem gio chua nhan = %s muahahahah :))%n",hana);
         //bai4_chuyển h sang phút,ngày sang phút
-        Con_dh convertdh = new Con_dh(2,1);
-        
-        System.out.println("Chuyen h sang phut " + convertdh.GIOSANGPHUT(2 ) + " phut");
-
-        System.out.println("Chuyen ngay sang phut " + convertdh.NGAYSANGPHUT(5) + "phut" );
+       
         
 
         }
