@@ -8,9 +8,16 @@ public class BaiTap3 {
         System.out.printf("Tong cua tich la %d%n", sumOfProduct);
         //bai3
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập một số nguyên dương: ");
+        System.out.print("nhap mọt so nguyen duong: ");
         int number = scanner.nextInt();
-        System.out.print("Các thừa số nguyên tố của " + number + " là: ");
+        System.out.print("cac thua so nguyen to " + number + " la: ");
         calculator.primeFactors(number);
+        System.out.println();
+        //bai1
+        int sum = calculator.calculateSum();
+        System.out.print("tong la: " + sum);
+
+        
     }
 }
+

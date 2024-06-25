@@ -1,5 +1,7 @@
+import java.util.Scanner;
+
 public class Calculator {
-    //(bai2) có xem gpt hướng dẫn
+    //(bai2)
     public int calculateSumOfProduct(int n) {
         int sum = 0;
         for (int i = 1; i <= n; i++) {
@@ -12,14 +14,14 @@ public class Calculator {
         return sum;
     }
   
-//(bai3) chưa biết làm, xem gpt nhưng ko hiểu
+    //(bai3)
     public static void primeFactors(int number) {
         while (number % 2 == 0) {
             System.out.print(2 + " ");
             number /= 2;
         }
 
-        for (int i = 3; i <= Math.sqrt(number); i += 2)//không hiểu đoạn này 
+        for (int i = 3; i <= Math.sqrt(number); i += 2)
         {
             while (number % i == 0) {
                 System.out.print(i + " ");
@@ -30,6 +32,26 @@ public class Calculator {
         if (number > 2) {
             System.out.print(number);
         }
+    }
+    //bai3
+    public int calculateSum() {
+        int sum = 0;
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.print("Moi nhap vao so de tinh tong: , 'n' để kết thúc: ");
+            String input = scanner.next();
+            try {
+                int number = Integer.parseInt(input);
+                sum += number;
+            } catch (NumberFormatException e) {
+                if (input.equalsIgnoreCase("n")) {
+                    break;
+                } else {
+                    System.out.println("Nhap bat ky de tiep tuc chuong trinh, 'n' để kết thúc!!!");
+                }
+            }
+        }
+        return sum;
     }
 
 }
