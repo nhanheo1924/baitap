@@ -1,3 +1,4 @@
+package hoc;
 public class ConvertDayHourToMin {
     public int convertDayToMin(int a){
         return a * 1440;
