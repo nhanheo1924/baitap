@@ -33,7 +33,7 @@ public class Calculator {
             System.out.print(number);
         }
     }
-    //bai3
+    //bai1
     public int calculateSum() {
         int sum = 0;
         Scanner scanner = new Scanner(System.in);
